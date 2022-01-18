@@ -1,2 +1,2 @@
-# Spring2022Demo
+# Demo
 Project for Web Design 1
