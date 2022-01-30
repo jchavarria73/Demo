@@ -3,10 +3,61 @@
 <head>
   <meta charset="UTF-8">
 <title>HTML1</title>
+	<style>
+		i{
+			color:red;
+		}
+	
+		.leftCol{background-color: aqua;}
+		
+		#listNames{
+			font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			color:brown;}
+		
+	</style>
+	
 </head>
 
 <body>
   <h1>Bald Eagles</h1>
+	
+	<table style="width:60%; border: thin solid; ">
+		
+	<tr align="left">
+		<th>Types of Eagles</th>
+		<th>Food eaten</th> 
+		<th>Average Lifespan</th>
+	</tr>
+		
+	<tr>
+		<td class="leftCol"><a href="https://www.google.com">Bald Eagle </a></td>
+		<td>Fish</td>
+		<td>30 Years</td>
+	</tr>
+	<tr>
+		<td class="leftCol"><a href="goldeneagle.html">Golden Eagle</a></td>
+		<td>Rabbits, Mice, and Prairie dogs</td>
+		<td>30 Years</td>
+	</tr>
+	<tr>
+		<td class="leftCol">Harpy Eagle</td>
+		<td>Monkeys, Porcupines, and Opossums</td>
+		<td>35 Years&nbsp;</td>
+	</tr>
+	</table>
+		<h2 id="listNames">Types of Eagles</h2>
+			<ol type="I">
+				<li>Bald Eagle</li>
+					<ol type="i">
+				<li>baby bald eagle </li>
+				</ol>
+				<li id="eagleName"></li>
+				<li>Harpy Eagle</li>
+				<li>Crowned Eagle</li>
+				<li>Spanish-Imperial Eagle</li>
+	
+			</ol>
+	
 	<hr>
 	<h2>What do eagles eat?</h2>
 		<img src="images/fish.jpg" alt="Bald Eagle in Alaska">
@@ -21,4 +72,7 @@
 		<h3> 100 miles per hour</h3>
 	<p>Bald Eagles can dive at speeds up to <em title="Up to 100 miles per hour." style="color: red">100 miles per hour.</em></p>
 </body>
+	<script>
+document.getElementById("eagleName").innerHTML = "Golden Eagle";
+</script>
 </html>
